@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kullanıcı Sayfası - MEK English</title>
+    <link rel="stylesheet" href="/genel.css">
+    <link rel="stylesheet" href="/user.css">
+</head>
+
+<body>
+    <%- include("partials/_header") %>
+
+        <main>
+            <section class="hos-geldin">
+                <h2>Hoş Geldin, <%= user.name %>
+                </h2>
+                <p>Yeni Kelimeler Öğrenmeye Hazır Mısın?</p>
+            </section>
+
+            <a href="/users/learn" class="ogren-btn">ÖĞRENMEYE BAŞLA!</a>
+
+            <section class="istatistikler">
+                <div>
+                    <h3>Öğrendiğim Kelime Sayısı</h3>
+                    <p>
+                        <%= user.selectedWords.length %>
+                    </p>
+                </div>
+
+                <div>
+                    <h3>Kalan Kelime Sayısı</h3>
+                    <p>
+                        <%= english.length - user.selectedWords.length %>
+                    </p>
+                </div>
+            </section>
+
+        </main>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.45)), url("/images/arkaplan5.jpg") no-repeat 50% 50%/cover;
+    height: 100vh;
+}
+
+main .hakkimizda-giris {
+    display: block;
+    margin: auto;
+    width: 60%;
+}
+
+main .hakkimizda-giris h2 {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+main .hakkimizda-giris p {
+    color: rgb(255, 255, 255, 0.90);
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+main .hakkimizda-giris p a {
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+    main .hakkimizda-giris {
+        width: 80%;
+    }
+
+    main .hakkimizda-giris h2 {
+        font-size: 30px;
+    }
+
+    main .hakkimizda-giris p {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+}

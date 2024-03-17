@@ -1,0 +1,41 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    background: radial-gradient(rgba(79, 32, 207, 0.85) 5%,
+            rgba(25, 0, 49, 1) 95%);
+    height: 100vh;
+}
+
+main h2 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+main span {
+    display: block;
+    width: fit-content;
+    margin: auto;
+    background-color: rgb(255, 255, 255, 0.85);
+    padding: 0 10px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+main ul {
+    display: block;
+    list-style: none;
+}
+
+main ul li {
+    display: block;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+    margin: auto;
+    margin-bottom: 8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 5px 15px;
+}

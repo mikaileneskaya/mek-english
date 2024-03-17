@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Öğrendiğim Kelimeler - MEK English</title>
+    <link rel="stylesheet" href="/genel.css">
+    <link rel="stylesheet" href="/learnings.css">
+</head>
+
+<body>
+    <%- include("partials/_header") %>
+
+        <main>
+            <section class="kelimeler-list">
+                <h2>Öğrendiğim Kelimeler</h2>
+                <span>topam öğrendiğim kelime sayısı: <%= user.selectedWords.length %></span>
+                <ul>
+                    <% for(let i=0; i < user.selectedWords.length; i++) { %>
+                        <li>
+                            <%= user.selectedWords[i] %>
+                        </li>
+                        <% } %>
+                </ul>
+            </section>
+        </main>
+
+</body>
+
+</html>

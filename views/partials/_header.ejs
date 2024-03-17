@@ -1,0 +1,20 @@
+<header>
+    <a href="/">
+        <h1>MEK English</h1>
+    </a>
+
+    <nav>
+
+
+        <% if (user) { %>
+            <a class="<%= link === 'dashboard' && 'active' %>" href="/users/dashboard">Kullanıcı Paneli</a>
+            <a class="<%= link === 'dashboard' && 'active' %>" href="/users/learnings">Öğrendiğim Kelimeler</a>
+            <% } else { %>
+                <a href="/">Anasayfa</a>
+                <a href="/about">Hakkımda</a>
+                <a class="<%= link === 'login' && 'active' %>" href="/login">Giriş Yap</a>
+                <a class="<%= link === 'register' && 'active' %>" href="/register">Kayıt Ol</a>
+
+                <% }%>
+    </nav>
+</header>

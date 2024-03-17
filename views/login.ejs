@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap - MEK English</title>
+    <link rel="stylesheet" href="genel.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <%- include("partials/_header") %>
+
+
+    <main>
+        <form action="users/login" method="POST">
+            <h2>Giriş Yap</h2>
+
+            <label>Kullanıcı Adı</label>
+            <input type="text" name="username">
+
+            <label>Şifre</label>
+            <input type="password" name="password">
+
+            <input type="submit" value="Gönder">
+        </form>
+    </main>
+</body>
+</html>

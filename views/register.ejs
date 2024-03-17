@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayıt Ol - MEK English</title>
+    <link rel="stylesheet" href="genel.css">
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <%- include("partials/_header") %>
+
+    <main>
+        <form action="users/register" method="POST">
+            <h2>Kayıt Ol</h2>
+
+            <label>Adınız</label>
+            <input type="text" name="name">
+
+            <label>Kullanıcı Adınız</label>
+            <input type="text" name="username">
+
+            <label>E-postanız</label>
+            <input type="email" name="email">
+
+            <label>Şifreniz</label>
+            <input type="password" name="password">
+
+            <input type="submit" value="Gönder">
+        </form>
+    </main>
+</body>
+</html>
